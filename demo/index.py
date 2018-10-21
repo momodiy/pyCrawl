@@ -21,14 +21,17 @@ def two_hundred_coupons():
         count += 1
         data += 'coupon no.' + str(count) + ' ---  ' + coupon_creator(digit) + '\n'
 
-    print(data)
+    # print(data)
     return data
 
 
 # 以只读方式打开txt文件
 # coupondata = open('random.txt', 'w')
-coupondata = open('random.xlsx', 'w')
+coupondata = open('random.txt', 'w')
+print(coupondata.path)
+print(111)
 # 写入数据
 coupondata.write(two_hundred_coupons())
+# coupondata.write('66666')
 # 关闭文件
 coupondata.close()
