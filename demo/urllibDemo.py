@@ -16,7 +16,7 @@ bsObj=BeautifulSoup(html.read(),"html.parser")
 str=bsObj.body
 print(str)
 
-coupondata = open('res.txt', 'w')
+coupondata = open('res.xlsx', 'w')
 # 写入数据
 coupondata.write(str.get_text('', strip=True))
 # 关闭文件

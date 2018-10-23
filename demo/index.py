@@ -32,6 +32,5 @@ print(coupondata.path)
 print(111)
 # 写入数据
 coupondata.write(two_hundred_coupons())
-# coupondata.write('66666')
 # 关闭文件
 coupondata.close()
